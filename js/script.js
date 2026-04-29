@@ -7,3 +7,6 @@ function confirmar(){
 function excluir(){
     window.alert("Tem certeza que deseja excluir esse formulário?")
 }
+function confirma(){
+    return window.confirm("Deseja adicionar item ao carrinho?")
+}
