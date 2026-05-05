@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema escolar</title>
+</head>
+
+<body>
+
+    <h1>Exemplo Const</h1>
+    <p>O nome do sistema e fixo (const)</p>
+
+    <label for="">Digite seu nome:</label>
+    <input type="text" name="" id="nome" placeholder="Digite seu nome aqui">
+
+    <button onclick="mostrar()">Mostrar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        const sistema = "Sistema escolar";
+
+        function mostrar() {
+            let nome = document.getElementById("nome").value;
+
+            document.getElementById("resultado").innerHTML = "Bem-vindo " + nome + " ao " + sistema;
+        }
+    </script>
+</body>
+
+</html>
