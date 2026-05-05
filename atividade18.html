@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo</title>
+</head>
+
+<body>
+    <center><h1>Calculadora profissional</h1>
+
+    <label for="">Digite um número para calcular</label>
+    <input type="number" id="soma1"><br>
+    <label for="">Digite o segundo número</label>
+    <input type="number" id="soma2"><br>
+
+    <button onclick="somar()">Veja o resultado</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function somar() {
+
+            let numero1 = Number(document.getElementById("soma1").value);
+            let numero2 = Number(document.getElementById("soma2").value);
+            let resultado = numero1 + numero2;
+
+            document.getElementById("resultado").innerHTML = "O resultado é " + resultado;
+        }
+    </script>
+</body>
+
+</html>
